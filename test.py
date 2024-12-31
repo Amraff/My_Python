@@ -1,24 +1,25 @@
-#Checking the length of a value in a variable
-name = "Raphew Karim Issah"
-print("My name is:", name)
-length = len(name)
-print("Length of the string is:", length)
+#Accessing a global variable inside a function
+#Note that Global variables are set before the function
+# whiles local variables are set within the variable
+x = 10
+#writing my function
+def print_global():
+    print("The value stored in the global variable is:", x)
+print_global()      #end the function by calling the function
 
-#Printing my age and adding 1 to next year's age
-age = 33
-print("My age this year is:", age)
-next_year_age = age + 1
-print("My age next year is:", next_year_age)
+#Writing the variable in the function mostly not reusable
+def print_global(x=50):
+    print("The new value of x is:", x)
+print_global()
 
-#joining independent variables together by concatenating
-first_name = "Raphew"
-mid_name = "Karim"
-last_name = "Issah"
-full_name = first_name + " " + mid_name + " " + last_name
-print("My full name is:", full_name)
+#Reusable functions
+def print_global(a,b):
+    result= a + b
+    print("The value of a and b is:", result)
+print_global(5, 6)
 
-#simple age eligibility
-age = 17
-is_eligible_to_vote = age >= 18
-print("Eligible to vote:", is_eligible_to_vote)
-
+#Local variables:
+def my_local_variable():
+    x= 10 #local variable
+    print(x)
+my_local_variable()
