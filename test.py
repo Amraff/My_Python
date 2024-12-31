@@ -1,10 +1,10 @@
-name = "Raphew Karim Issah"
-age = 33
-height = 6.4
-is_student = True
-city = "Accra"
-print("My name is :", name)
-print("I am", age)
-print("My height is:", height)
-print("Is_student:", is_student)
-print("I live in:", city)
+num1 = 50
+num2 = 5
+result = num1 + num2
+print("the answer is:", result)
+result = num1 - num2
+print("The subtraction is:", result)
+result = num1 / num2
+print("the division is:", result)
+result = num1 % num2
+print("the modulus is:", result)
